@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "startDev": "nodemon server.js",
-    "start": "node server.js",
+    "start": "nohup node server.js &",
     "test": "mocha"
   },
   "dependencies": {
