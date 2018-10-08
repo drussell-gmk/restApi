@@ -21,6 +21,7 @@ artifacts:
   files:
     - api/**/*
     - scripts/*
+    - test/*
     - server.js
     - appspec.yml
     - package.json

@@ -5,6 +5,8 @@ files:
     destination: /home/ec2-user/restApi/api
   - source: scripts/
     destination: /home/ec2-user/restApi/scripts
+  - source: test/
+    destination: /home/ec2-user/restApi/test
   - source: server.js
     destination: /home/ec2-user/restApi/
   - source: appspec.yml

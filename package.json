@@ -5,7 +5,8 @@
   "scripts": {
     "startDev": "nodemon server.js",
     "start": "nohup node server.js &",
-    "test": "mocha"
+    "test": "mocha",
+    "integrationTest": "mocha test/integrationTest.js"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
