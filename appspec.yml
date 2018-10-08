@@ -1,7 +1,17 @@
 version: 0.0
 os: linux
 files:
-  - source: /restApi
+  - source: api/**/*
+    destination: /home/ec2-user/restApi
+  - source: scripts/*
+    destination: /home/ec2-user/restApi
+  - source: server.js
+    destination: /home/ec2-user/restApi
+  - source: appspec.yml
+    destination: /home/ec2-user/restApi
+  - source: package.json
+    destination: /home/ec2-user/restApi
+  - source: package-lock.json
     destination: /home/ec2-user/restApi
 permissions:
   - object: /
@@ -26,6 +36,6 @@ hooks:
       timeout: 60
       runas: ec2-user
   ValidateService:
-      - location: scripts/test.sh
-        timeout: 60
-        runas: ec2-user
+    - location: scripts/test.sh
+      timeout: 60
+      runas: ec2-user
