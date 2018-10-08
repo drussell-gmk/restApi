@@ -1,9 +1,9 @@
 version: 0.0
 os: linux
 files:
-  - source: api/**/*
+  - source: api/
     destination: /home/ec2-user/restApi/api
-  - source: scripts/*
+  - source: scripts/
     destination: /home/ec2-user/restApi/scripts
   - source: server.js
     destination: /home/ec2-user/restApi/server.js
