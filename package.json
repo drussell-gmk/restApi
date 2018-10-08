@@ -5,7 +5,7 @@
   "scripts": {
     "startDev": "nodemon server.js",
     "start": "nohup node server.js &",
-    "test": "mocha",
+    "test": "mocha test/basicTests.js",
     "integrationTest": "mocha test/integrationTest.js"
   },
   "dependencies": {
