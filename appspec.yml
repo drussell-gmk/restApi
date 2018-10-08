@@ -23,10 +23,10 @@ hooks:
   #   - location: restApi/scripts/stop.sh
   #     timeout: 10
   #     runas: ec2-user
-  BeforeInstall:
-    - location: scripts/install.sh
-      timeout: 1200
-      runas: ec2-user
+  # BeforeInstall:
+  #   - location: scripts/install.sh
+  #     timeout: 1200
+  #     runas: ec2-user
   # AfterInstall:
   #   - location: backend/app/deploy/afterinstall.sh
   #     timeout: 1200
