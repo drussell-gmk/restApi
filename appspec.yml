@@ -6,13 +6,13 @@ files:
   - source: scripts/
     destination: /home/ec2-user/restApi/scripts
   - source: server.js
-    destination: /home/ec2-user/restApi/server.js
+    destination: /home/ec2-user/restApi/
   - source: appspec.yml
-    destination: /home/ec2-user/restApi/appspec.yml
+    destination: /home/ec2-user/restApi/
   - source: package.json
-    destination: /home/ec2-user/restApi/package.json
+    destination: /home/ec2-user/restApi/
   - source: package-lock.json
-    destination: /home/ec2-user/restApi/package-lock.json
+    destination: /home/ec2-user/restApi/
 permissions:
   - object: /
     pattern: "**"
