@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "mocha": "^5.2.0",
+    "node-mocks-http": "^1.7.2",
     "nodemon": "^1.18.4"
   }
 }
