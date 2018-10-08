@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "startDev": "nodemon server.js",
-    "start": "nohup node server.js >/dev/null 2>&1 &",
+    "start": "nohup node server.js > restApi.log 2>&1 &",
     "test": "mocha test/basicTests.js",
     "integrationTest": "mocha test/integrationTest.js"
   },
