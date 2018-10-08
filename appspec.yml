@@ -2,17 +2,17 @@ version: 0.0
 os: linux
 files:
   - source: api/**/*
-    destination: /home/ec2-user/restApi
+    destination: /home/ec2-user/restApi/api
   - source: scripts/*
-    destination: /home/ec2-user/restApi
+    destination: /home/ec2-user/restApi/scripts
   - source: server.js
-    destination: /home/ec2-user/restApi
+    destination: /home/ec2-user/restApi/server.js
   - source: appspec.yml
-    destination: /home/ec2-user/restApi
+    destination: /home/ec2-user/restApi/appspec.yml
   - source: package.json
-    destination: /home/ec2-user/restApi
+    destination: /home/ec2-user/restApi/package.json
   - source: package-lock.json
-    destination: /home/ec2-user/restApi
+    destination: /home/ec2-user/restApi/package-lock.json
 permissions:
   - object: /
     pattern: "**"
