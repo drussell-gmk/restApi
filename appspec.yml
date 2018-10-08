@@ -1,0 +1,31 @@
+version: 0.0
+os: linux
+files:
+  - source: /restApi
+    destination: /home/ec2-user/restApi
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ec2-user
+    group: ec2-user
+hooks:
+  # ApplicationStop:
+  #   - location: restApi/scripts/stop.sh
+  #     timeout: 10
+  #     runas: ec2-user
+  BeforeInstall:
+    - location: restApi/scripts/install.sh
+      timeout: 1200
+      runas: ec2-user
+  # AfterInstall:
+  #   - location: backend/app/deploy/afterinstall.sh
+  #     timeout: 1200
+  #     runas: ec2-user
+  ApplicationStart:
+    - location: restApi/scripts/start.sh
+      timeout: 60
+      runas: ec2-user
+  ValidateService:
+      - location: restApi/scripts/test.sh
+        timeout: 60
+        runas: ec2-user
