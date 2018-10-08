@@ -19,4 +19,9 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
+    - api/*
+    - scripts/*
     - server.js
+    - appspec.yml
+    - package.json
+    - package-lock.json
