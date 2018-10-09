@@ -2,9 +2,7 @@ var assert = require('assert');
 var request = require('request');
 
 describe('Test endpoint', function() {
-    var ec2Dns = process.env.EC2_DNS;
-    console.log(`EC2 DNS: ${ec2Dns}`);
-    var url = `http://${ec2Dns}:8080`;
+    var url = 'http://ec2-34-235-143-55.compute-1.amazonaws.com:8080/';
 
     it('should return \'You made it!\'', (done) => {
         request(url, (error, response, body) => {
