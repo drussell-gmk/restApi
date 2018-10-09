@@ -21,12 +21,12 @@ permissions:
     owner: ec2-user
     group: ec2-user
 hooks:
-  # ApplicationStop:
-  #   - location: restApi/scripts/stop.sh
-  #     timeout: 10
-  #     runas: ec2-user
+  ApplicationStop:
+    - location: scripts/stop.sh
+      timeout: 10
+      runas: ec2-user
   BeforeInstall:
-    - location: scripts/install.sh
+    - location: scripts/clean.sh
       timeout: 1200
       runas: ec2-user
   # AfterInstall:
