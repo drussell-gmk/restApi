@@ -29,10 +29,10 @@ hooks:
     - location: scripts/clean.sh
       timeout: 1200
       runas: ec2-user
-  # AfterInstall:
-  #   - location: backend/app/deploy/afterinstall.sh
-  #     timeout: 1200
-  #     runas: ec2-user
+  AfterInstall:
+    - location: scripts/install-dependencies.sh
+      timeout: 1200
+      runas: ec2-user
   ApplicationStart:
     - location: scripts/start.sh
       timeout: 60
