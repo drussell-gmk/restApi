@@ -4,9 +4,9 @@ var request = require('request');
 describe('Test endpoint', function() {
     var url = 'http://localhost:8080/';
 
-    it('should return \'You made it!\'', (done) => {
+    it('should return \'This is the dev instance!\'', (done) => {
         request(url, (error, response, body) => {
-            assert.equal(body, 'You made it!');
+            assert.equal(body, 'This is the dev instance!');
             done();
         } );
     });

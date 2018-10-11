@@ -9,7 +9,7 @@ function buildResponse() {
 }
 
 describe('Test controller testGet', function() {
-    it('should return \'You made it!\'', (done) => {
+    it('should return \'This is the dev instance!\'', (done) => {
         var response = buildResponse();
         var request = http_mocks.createRequest({
             method: 'GET',
@@ -18,7 +18,7 @@ describe('Test controller testGet', function() {
 
         response.on('end', function() {
             var body = response._getData();
-            assert.equal(body, 'You made it!');
+            assert.equal(body, 'This is the dev instance!');
             done()
         });
 
