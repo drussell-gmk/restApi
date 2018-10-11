@@ -1,3 +1,3 @@
 exports.testGet = function(req, res){
-    res.status(200).send('This is the dev instance!');
+    res.status(200).send('And we changed something again!');
 }
