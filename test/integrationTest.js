@@ -6,7 +6,7 @@ describe('Test endpoint', function() {
 
     it('should return \'and we\'re changing again!\'', (done) => {
         request(url, (error, response, body) => {
-            assert.equal(body, 'and we\'re!');
+            assert.equal(body, 'and we\'re changing again!');
             done();
         } );
     });
