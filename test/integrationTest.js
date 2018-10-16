@@ -6,7 +6,7 @@ describe('Test endpoint', function() {
 
     it('should return \'Here\'s a new feature!\'', (done) => {
         request(url, (error, response, body) => {
-            assert.equal(body, 'I\'m tired of changing this code!');
+            assert.equal(body, 'Here\'s a new feature!');
             done();
         } );
     });
