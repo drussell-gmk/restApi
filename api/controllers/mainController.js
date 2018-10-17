@@ -1,3 +1,3 @@
 exports.testGet = function(req, res){
-    res.status(200).send('ok new features!');
+    res.status(200).send('nah nah nah nah!');
 }
