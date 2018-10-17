@@ -4,9 +4,9 @@ var request = require('request');
 describe('Test endpoint', function() {
     var url = 'http://localhost:8080/';
 
-    it('should return \'never gonna give you up!\'', (done) => {
+    it('should return \'no more load balancer!\'', (done) => {
         request(url, (error, response, body) => {
-            assert.equal(body, 'never gonna give you up!');
+            assert.equal(body, 'no more load balancer!');
             done();
         } );
     });
