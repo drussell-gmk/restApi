@@ -1,3 +1,3 @@
 exports.testGet = function(req, res){
-    res.status(200).send('nah nah nah nah!');
+    res.status(200).send('changing master directly!');
 }
