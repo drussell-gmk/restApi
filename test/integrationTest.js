@@ -6,7 +6,7 @@ describe('Test endpoint', function() {
 
     it('should return \'never gonna give you up!\'', (done) => {
         request(url, (error, response, body) => {
-            assert.equal(body, 'never gonna pass this test!');
+            assert.equal(body, 'never gonna give you up!');
             done();
         } );
     });
