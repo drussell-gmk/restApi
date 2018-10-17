@@ -7,7 +7,7 @@ function buildResponse() {
 }
 
 describe('Test controller testGet', function() {
-    it('should return \'no more load balancer!\'', (done) => {
+    it('should return \'ok new features!\'', (done) => {
         var response = buildResponse();
         var request = http_mocks.createRequest({
             method: 'GET',
@@ -16,7 +16,7 @@ describe('Test controller testGet', function() {
 
         response.on('end', function() {
             var body = response._getData();
-            assert.equal(body, 'no more load balancer!');
+            assert.equal(body, 'ok new features!');
             done()
         });
 
