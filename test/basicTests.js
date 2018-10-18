@@ -7,7 +7,7 @@ function buildResponse() {
 }
 
 describe('Test controller testGet', function() {
-    it('should return \'i need more features!\'', (done) => {
+    it('should return \'finally getting it to work!\'', (done) => {
         var response = buildResponse();
         var request = http_mocks.createRequest({
             method: 'GET',
@@ -16,7 +16,7 @@ describe('Test controller testGet', function() {
 
         response.on('end', function() {
             var body = response._getData();
-            assert.equal(body, 'i need more features!');
+            assert.equal(body, 'finally getting it to work!');
             done()
         });
 
